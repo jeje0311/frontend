@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        h2 {
+            text-align: center;
+            color: white;
+        }
+
+        p {
+            text-align: center;
+            font-size: 50px;
+            color: aquamarine;
+            font-weight: 900;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>결과</h2>
+    <p>결과값이 나오는 자리</p>
+    <script>
+        // let scr = Number(prompt('점수입력'));
+        // console.log('확인2');
+        // document.write('<p>');
+        // if (scr >= 90) {
+        //     console.log('확인1');
+        //     document.write('A');
+        // } else if (scr >= 80 && scr < 90) {
+        //     document.write('B');
+        // } else if (scr >= 70 && scr < 80) {
+        //     document.write('C');
+        // } else if (scr < 70) {
+        //     document.write('F');
+        // }
+        // document.write('</p>');
+
+            // let scr = Number(prompt('점수입력'));
+            // let grad = 'F';
+            // if (scr >= 90){
+            //     grade = 'A';
+            // }else if (scr >= 80){
+            //     grade = 'B';
+            // }else if (scr >= 70){
+            //     grade = 'C'; 
+            // }
+
+            // document.write('<p>당신의 점수는' + grade + '입니다</p>');
+            // document.write('<p>당신의 점수는' ${grad}'입니다</p>');
+
+
+        // 1. 사용자에게 점수를 입력받아서
+        // 해당점수가 90이상 A
+        // 80이상 90미만 B
+        // 70이상 80미만 C
+        // 70미만 F
+        // 당신의 점수는 C입니다.
+
+
+        let year = Number(prompt('년도입력'));
+        if(year % 4 == 0 && year % 100 == 0 && year % 400 == 0){
+            document.write(`<p>${year}년도는 윤년입니다</p>`);
+        }
+        if(year % 100 == 0 && year % 400){
+            document.write(`<p>${year}년도는 평년입니다</p>`);
+        }
+        if(year % 4 == 0 && year % 100 != 0 && year % 400 != 0){
+            document.write(`<p>${year}년도는 윤년입니다</p>`);
+        }
+        if(year % 4 != 0){
+            document.write(`<p>${year}년도는 평년입니다</p>`);
+        }
+    </script>
+</body>
+
+</html>
